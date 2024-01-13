@@ -177,7 +177,6 @@ class PeCFE(nn.Module):
         self.head=nn.Sequential(
             nn.Conv2d(16,16,1,1,0),
             nn.Flatten(start_dim=1, end_dim=-1),
-            nn.Linear(1024,768)
         )
         self.gelu=nn.GELU()
     def forward(self, x):
