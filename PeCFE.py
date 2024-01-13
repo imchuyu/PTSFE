@@ -180,8 +180,7 @@ class PeCFE(nn.Module):
         )
         self.gelu=nn.GELU()
     def forward(self, x):
-        x = self.pre(x)
-        # x=self.pre(x+self.pe)
+        x=self.pre(x+self.pe)
         temp=x
         h1=self.highway1(x)
         h2=self.highway2(x)
@@ -207,7 +206,7 @@ class PeCFE(nn.Module):
         temp = self.res3(x)
         x = self.conv3_1(x)
         x += temp
-        # x += h1
+        x += h1
         x = self.gelu(x)
 
         temp = x
@@ -226,7 +225,7 @@ class PeCFE(nn.Module):
         temp = self.res5(x)
         x = self.conv5_1(x)
         x += temp
-        # x += h2
+        x += h2
         x = self.gelu(x)
 
         x=self.head(x)
