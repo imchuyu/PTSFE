@@ -66,7 +66,7 @@ class Transformer(nn.Module):
             x = ff(x) + x
         return x
 
-class ViT(nn.Module):
+class PTSFE(nn.Module):
     def __init__(self, *,num_slices, num_classes, heads, dim_head = 64, dropout = 0., emb_dropout = 0.):
         super().__init__()
         dim = 1024
