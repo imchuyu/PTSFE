@@ -8,6 +8,6 @@ This repository contains PyTorch implementation for PTSFE.
 
 You can download the test set and model weights:
 
- [Google Drive](https://drive.google.com/drive/folders/18wc2uuLENm3kub2qAprhs55pa_cv1TXT?usp=sharing). 
+ [Google Drive](https://drive.google.com/drive/folders/166qVKPKAesrA41OMqbqrR8vkwExZ8WYq?usp=sharing). 
  
  [Baidu Netdisk](https://pan.baidu.com/s/1Wijt2GtrEuQrqR70vEdMUg?pwd=ftsj ). 
